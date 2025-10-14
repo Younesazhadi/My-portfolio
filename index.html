@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Younes El Azhadi – Portfolio</title>
+    <meta name="description" content="Portfolio de Younes EL AZHADI, développeur full stack: Angular, .NET, Spring Boot, React, MongoDB, SQL, sécurité et performance." />
+
+    <!-- SEO basics -->
+    <meta name="author" content="Younes EL AZHADI" />
+    <meta name="theme-color" content="#0a84ff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons (for favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a84ff'/><text x='50' y='58' text-anchor='middle' font-size='44' font-family='Inter' fill='white'>YE</text></svg>" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#accueil" class="logo" aria-label="Retour à l'accueil">YOUNES EL AZHADI</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Ouvrir le menu">
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+        </button>
+        <ul id="nav-list" class="nav__list">
+          <li><a href="#accueil" class="nav__link">Accueil</a></li>
+          <li><a href="#apropos" class="nav__link">À propos</a></li>
+          <li><a href="#competences" class="nav__link">Compétences</a></li>
+          <li><a href="#projets" class="nav__link">Projets</a></li>
+          <li><a href="#parcours" class="nav__link">Parcours</a></li>
+          <li><a href="#certificats" class="nav__link">Certificats</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre">
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Accueil -->
+      <section id="accueil" class="section hero" aria-label="Accueil">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="hero__kicker">Développeur Full Stack</p>
+            <h1 class="hero__title" aria-live="polite">
+              <span class="typewriter" data-text="YOUNES EL AZHADI"></span>
+            </h1>
+            <p class="hero__subtitle">
+              Passionné par le développement logiciel, spécialisé en ingénierie full‑stack (Angular, .NET, Spring Boot, React, MongoDB, SQL), sécurité applicative et optimisation des performances.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Me contacter</a>
+              <a href="#cv" class="btn btn--ghost">Télécharger mon CV</a>
+            </div>
+            <div class="hero__meta" role="list" aria-label="Coordonnées">
+              <span role="listitem">
+                <img class="hero-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/location.svg" alt="Localisation" />
+                Rabat, Maroc
+              </span>
+              <a role="listitem" href="tel:+212675956915">
+                <img class="hero-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/phone.svg" alt="Téléphone" />
+                +212 675 95 69 15
+              </a>
+              <a role="listitem" href="https://mail.google.com/mail/?view=cm&fs=1&to=younes.azhadi@gmail.com&su=Contact%20depuis%20votre%20portfolio&body=Bonjour%20Younes,%0AJe%20souhaite%20vous%20contacter%20concernant..." target="_blank" >
+                <img class="hero-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/mail.svg" alt="Email" />
+                younes.azhadi@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img class="avatar" src="assets/portrait.jpg" alt="Photo de profil de Younes El Azhadi" width="320" height="320" loading="lazy" />
+            <ul class="social" aria-label="Réseaux sociaux">
+              <li><a href="https://www.linkedin.com/in/younes-el-azhadi" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+              <li><a href="https://github.com/younesazhadi" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- À propos -->
+      <section id="apropos" class="section" aria-label="À propos">
+        <div class="container grid-2">
+          <div>
+            <h2>À propos</h2>
+            <p>
+              Rigoureux et adepte des bonnes pratiques (clean code, tests, audit), je conçois et réalise des applications web de bout en bout. J’évolue efficacement en équipe Agile pour garantir des livrables de qualité, sûrs et performants.
+            </p>
+            <ul class="list-meta">
+              <li>
+                <img class="meta-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/location.svg" alt="Localisation" />
+                Av Kiffah bloc AH N8 – Rabat – CYM
+              </li>
+              <li>
+                <img class="meta-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/cake.svg" alt="Date de naissance" />
+                Né le 15/10/2003
+              </li>
+              <li>
+                <img class="meta-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/target.svg" alt="Objectif" />
+                Objectif: Full‑Stack Engineer / Software Engineer
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 id="cv">Curriculum Vitæ</h3>
+            <p>Téléchargez mon CV en PDF pour plus de détails sur mon parcours.</p>
+            <a class="btn btn--primary" href="assets/Younes_El_Azhadi_CV.pdf" download="Younes_El_Azhadi_CV.pdf">
+              Télécharger le CV (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+<!-- Certificats -->
+<section id="certificats" class="section" aria-label="Certificats">
+  <div class="container">
+    <h2>Certificats</h2>
+    <ul class="cert-list">
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <span class="cert-title">Introduction à Java et à la programmation orientée objet</span>
+        </div>
+        <span class="cert-org">University of Pennsylvania</span>
+      </li>
+     
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+          <span class="cert-title">React Native</span>
+        </div>
+        <span class="cert-org">Meta</span>
+      </li>
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" />
+          <span class="cert-title">Introduction à Git et GitHub</span>
+        </div>
+        <span class="cert-org">Google</span>
+      </li>
+     
+     
+     
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+          <span class="cert-title">Les bases de React</span>
+        </div>
+        <span class="cert-org">Meta</span>
+      </li>
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+          <span class="cert-title">Introduction aux conteneurs avec Docker, Kubernetes et OpenShift</span>
+        </div>
+        <span class="cert-org">IBM</span>
+      </li>
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
+          <span class="cert-title">Réseaux virtuels dans Azure</span>
+        </div>
+        <span class="cert-org">Whizlabs</span>
+      </li>
+      
+    
+      <li class="cert-item reveal">
+        <span class="cert-title">La recherche documentaire</span>
+        <span class="cert-org">École Polytechnique</span>
+      </li>
+      <li class="cert-item reveal">
+        <span class="cert-title">Villes africaines: Environnement et enjeux de développement durable</span>
+        <span class="cert-org">EPFL</span>
+      </li>
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+          <span class="cert-title">L'atelier Unix</span>
+        </div>
+        <span class="cert-org">Johns Hopkins University</span>
+      </li>
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+          <span class="cert-title">Introduction à HTML5</span>
+        </div>
+        <span class="cert-org">University of Michigan</span>
+      </li>
+      <li class="cert-item reveal">
+        <span class="cert-title">Génie logiciel : conception de logiciels et gestion de projets</span>
+        <span class="cert-org">HKUST</span>
+      </li>
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+          <span class="cert-title">Introduction à CSS3</span>
+        </div>
+        <span class="cert-org">University of Michigan</span>
+      </li>
+    
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <span class="cert-title">La programmation pour tous (commencer en Python)</span>
+        </div>
+        <span class="cert-org">University of Michigan</span>
+      </li>
+      <li class="cert-item reveal">
+        <span class="cert-title">La plateforme Arduino et la programmation en C</span>
+        <span class="cert-org">University of California, Irvine</span>
+      </li>
+   
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <span class="cert-title">Interactivité avec JavaScript</span>
+        </div>
+        <span class="cert-org">University of Michigan</span>
+      </li>
+  
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Web Dev" />
+          <span class="cert-title">HTML, CSS et Javascript pour les développeurs web</span>
+        </div>
+        <span class="cert-org">Johns Hopkins University</span>
+      </li>
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+          <span class="cert-title">Le langage de requête structuré (SQL)</span>
+        </div>
+        <span class="cert-org">University of Colorado Boulder</span>
+      </li>
+     
+      <li class="cert-item reveal">
+        <div class="cert-header">
+          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <span class="cert-title">Introduction à la programmation orientée objet (en C++)</span>
+        </div>
+        <span class="cert-org">EPFL</span>
+      </li>
+
+    
+  
+    </ul>
+  </div>
+</section>
+      <!-- Compétences -->
+      <section id="competences" class="section section--alt" aria-label="Compétences">
+        <div class="container">
+          <h2>Compétences</h2>
+          <div class="skills">
+            <div class="skill">
+              <div class="skill__label">Angular</div>
+              <div class="progress" aria-label="Niveau Angular" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><span data-width="90%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__label">.NET / C#</div>
+              <div class="progress" aria-label="Niveau .NET" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88"><span data-width="88%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__label">Spring Boot / Java</div>
+              <div class="progress" aria-label="Niveau Spring Boot" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span data-width="90%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__label">React</div>
+              <div class="progress" aria-label="Niveau React" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82"><span data-width="82%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__label">MongoDB / SQL</div>
+              <div class="progress" aria-label="Niveau Bases de données" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87"><span data-width="87%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__label">Sécurité & Performance</div>
+              <div class="progress" aria-label="Niveau Sécurité & Performance" aria-valuemin="0" aria-valuemax="100" aria-valuenow="83"><span data-width="83%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__label">HTML/CSS/JS</div>
+              <div class="progress" aria-label="Niveau HTML/CSS/JS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92"><span data-width="92%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__label">Python / Django</div>
+              <div class="progress" aria-label="Niveau Python/Django" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><span data-width="78%"></span></div>
+            </div>
+          </div>
+          <ul class="chips" aria-label="Autres compétences">
+            <li>UML</li>
+            <li>Bootstrap</li>
+            <li>JWT</li>
+            <li>Git / GitHub</li>
+            <li>ClosedXML</li>
+            <li>IText7</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projets -->
+      <section id="projets" class="section" aria-label="Projets">
+        <div class="container">
+          <h2>Projets</h2>
+          <div class="projects">
+            <article class="card reveal">
+              <div class="card__body">
+                <h3>Gestion de Clinique</h3>
+                <p>Gestion des patients, rendez‑vous et dossiers avec authentification et rôles. Stack: React, .NET, SQL Server.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__body">
+                <h3>GzaTel – Gestion de Magasins</h3>
+                <p>Ventes, stocks, facturation et rôles avec suivi temps réel. Stack: Spring Boot, React, MySQL.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__body">
+                <h3>Gestion de Restaurant</h3>
+                <p>Réservations et menus, DRM pour protéger les contenus, fortes performances. Stack: Django, JS, HTML/CSS.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__body">
+                <h3>Gestion de Bibliothèque</h3>
+                <p>Desktop Java Swing: livres, emprunts, adhérents, base de données via JDBC.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Parcours -->
+      <section id="parcours" class="section section--alt" aria-label="Parcours">
+        <div class="container">
+          <h2>Parcours</h2>
+          <ol class="timeline" aria-label="Ligne du temps des expériences et formations">
+            <li class="timeline__item reveal">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>Stage – CEGEDIM</h3>
+                <p class="timeline__meta">07/2025 – 09/2025 • Rabat</p>
+                <ul>
+                  <li>Spécification des besoins, user stories</li>
+                  <li>App interne full‑stack: gestion des bons de livraison</li>
+                  <li>Système d'audit et traçabilité, sécurité des données</li>
+                  <li>Tests unitaires, intégration et utilisateurs</li>
+                  <li>Optimisation des performances, déploiement</li>
+                  <li>Collaboration Agile</li>
+                </ul>
+                <p class="tech">Tech: Angular 15, .NET 6, MongoDB, JWT, ClosedXML, IText7, Bootstrap, Git/GitHub</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>Stage – Ayouris</h3>
+                <p class="timeline__meta">07/2024 – 09/2024 • Rabat</p>
+                <ul>
+                  <li>Raffinements, spécifications</li>
+                  <li>Amélioration de l’expérience utilisateur</li>
+                  <li>Développement de l’app Web SMSCloud</li>
+                  <li>Documentation</li>
+                </ul>
+                <p class="tech">Tech: Spring Boot, Java, React, PostgreSQL, HTML, CSS</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>Ingénieur d'État en Développement Informatique</h3>
+                <p class="timeline__meta">2021 – 2026 • EMSI, Rabat</p>
+              </div>
+            </li>
+            <li class="timeline__item reveal">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <h3>Baccalauréat Sciences Physiques</h3>
+                <p class="timeline__meta">2020 – 2021 • Les écoles scientifiques, Témara</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section" aria-label="Contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p style="text-align: center; margin-bottom: 40px; color: var(--muted);">Vous avez un projet ou une opportunité ? Contactez‑moi directement.</p>
+          <div class="contact-grid">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=younes.azhadi@gmail.com&su=Contact%20depuis%20votre%20portfolio&body=Bonjour%20Younes,%0AJe%20souhaite%20vous%20contacter%20concernant..." 
+   target="_blank" 
+   class="contact-card">
+  <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/mail.svg" alt="Email" />
+  <h3>Email</h3>
+  <p>younes.azhadi@gmail.com</p>
+</a>
+
+            <a href="tel:+212675956915" class="contact-card">
+              <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/phone.svg" alt="Téléphone" />
+              <h3>Téléphone</h3>
+              <p>+212 675 95 69 15</p>
+            </a>
+            <a href="https://www.linkedin.com/in/younes-el-azhadi" target="_blank" rel="noopener" class="contact-card">
+              <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/brand-linkedin.svg" alt="LinkedIn" />
+              <h3>LinkedIn</h3>
+              <p>younes el azhadi</p>
+            </a>
+            <a href="https://github.com/younesazhadi" target="_blank" rel="noopener" class="contact-card">
+              <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/brand-github.svg" alt="GitHub" />
+              <h3>GitHub</h3>
+              <p>youneselazhadi</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer__grid">
+        <p>© <span id="year"></span> Younes El Azhadi. Tous droits réservés.</p>
+        <nav aria-label="Liens utiles">
+          <ul class="footer__links">
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="assets/Younes_El_Azhadi_CV.pdf" download="Younes_El_Azhadi_CV.pdf">Télécharger le CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
