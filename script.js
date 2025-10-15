@@ -194,3 +194,22 @@ themeToggle?.addEventListener('click', () => {
 // Contact form removed - now using direct contact cards
 
 
+// Sélection du bouton
+const btnUp = document.getElementById("btnUp");
+
+// Quand on scroll vers le bas de 200px -> afficher le bouton
+window.onscroll = function() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btnUp.style.display = "block";
+  } else {
+    btnUp.style.display = "none";
+  }
+};
+
+// Quand on clique -> remonter en haut en douceur
+btnUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

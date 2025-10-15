@@ -36,10 +36,10 @@
         <ul id="nav-list" class="nav__list">
           <li><a href="#accueil" class="nav__link">Accueil</a></li>
           <li><a href="#apropos" class="nav__link">À propos</a></li>
+          <li><a href="#certificats" class="nav__link">Certificats</a></li>
           <li><a href="#competences" class="nav__link">Compétences</a></li>
           <li><a href="#projets" class="nav__link">Projets</a></li>
           <li><a href="#parcours" class="nav__link">Parcours</a></li>
-          <li><a href="#certificats" class="nav__link">Certificats</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
         <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre">
@@ -50,44 +50,91 @@
 
     <main id="main">
       <!-- Accueil -->
-      <section id="accueil" class="section hero" aria-label="Accueil">
-        <div class="container hero__grid">
-          <div class="hero__content">
-            <p class="hero__kicker">Développeur Full Stack</p>
-            <h1 class="hero__title" aria-live="polite">
-              <span class="typewriter" data-text="YOUNES EL AZHADI"></span>
-            </h1>
-            <p class="hero__subtitle">
-              Passionné par le développement logiciel, spécialisé en ingénierie full‑stack (Angular, .NET, Spring Boot, React, MongoDB, SQL), sécurité applicative et optimisation des performances.
-            </p>
-            <div class="hero__actions">
-              <a href="#contact" class="btn btn--primary">Me contacter</a>
-              <a href="#cv" class="btn btn--ghost">Télécharger mon CV</a>
-            </div>
-            <div class="hero__meta" role="list" aria-label="Coordonnées">
-              <span role="listitem">
-                <img class="hero-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/location.svg" alt="Localisation" />
-                Rabat, Maroc
-              </span>
-              <a role="listitem" href="tel:+212675956915">
-                <img class="hero-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/phone.svg" alt="Téléphone" />
-                +212 675 95 69 15
-              </a>
-              <a role="listitem" href="https://mail.google.com/mail/?view=cm&fs=1&to=younes.azhadi@gmail.com&su=Contact%20depuis%20votre%20portfolio&body=Bonjour%20Younes,%0AJe%20souhaite%20vous%20contacter%20concernant..." target="_blank" >
-                <img class="hero-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/mail.svg" alt="Email" />
-                younes.azhadi@gmail.com
-              </a>
-            </div>
-          </div>
-          <div class="hero__media">
-            <img class="avatar" src="assets/portrait.jpg" alt="Photo de profil de Younes El Azhadi" width="320" height="320" loading="lazy" />
-            <ul class="social" aria-label="Réseaux sociaux">
-              <li><a href="https://www.linkedin.com/in/younes-el-azhadi" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
-              <li><a href="https://github.com/younesazhadi" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<section id="accueil" class="section hero" aria-label="Accueil">
+  <div class="container hero__grid">
+
+    <!-- La photo et les réseaux sociaux -->
+    <div class="hero__media">
+      <img
+        class="avatar"
+        src="assets/portrait.jpg"
+        alt="Photo de profil de Younes El Azhadi"
+        width="320"
+        height="320"
+        loading="lazy"
+      />
+      <ul class="social" aria-label="Réseaux sociaux">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/younes-el-azhadi"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/younesazhadi"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Le texte et les coordonnées -->
+    <div class="hero__content">
+      <p class="hero__kicker">Développeur Full Stack</p>
+      <h1 class="hero__title" aria-live="polite">
+        <span class="typewriter" data-text="YOUNES EL AZHADI"></span>
+      </h1>
+      <p class="hero__subtitle">
+        Passionné par le développement logiciel, spécialisé en ingénierie full-stack (Angular, .NET, Spring Boot, React, MongoDB, SQL), sécurité applicative et optimisation des performances.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Me contacter</a>
+        <a href="#cv" class="btn btn--ghost">Télécharger mon CV</a>
+      </div>
+
+      <div class="hero__meta" role="list" aria-label="Coordonnées">
+        <span role="listitem">
+          <img
+            class="hero-icon"
+            src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/location.svg"
+            alt="Localisation"
+          />
+          Rabat, Maroc
+        </span>
+        <a role="listitem" href="tel:+212675956915">
+          <img
+            class="hero-icon"
+            src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/phone.svg"
+            alt="Téléphone"
+          />
+          +212 675 95 69 15
+        </a>
+        <a
+          role="listitem"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=younes.azhadi@gmail.com&su=Contact%20depuis%20votre%20portfolio&body=Bonjour%20Younes,%0AJe%20souhaite%20vous%20contacter%20concernant..."
+          target="_blank"
+        >
+          <img
+            class="hero-icon"
+            src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/mail.svg"
+            alt="Email"
+          />
+          younes.azhadi@gmail.com
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       
 
@@ -442,6 +489,8 @@
     </footer>
 
     <script src="script.js" defer></script>
+    <!-- Bouton retour en haut -->
+<button id="btnUp" title="Retour en haut" aria-label="Retour en haut">↑</button>
   </body>
   </html>
 
