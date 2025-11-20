@@ -1,497 +1,596 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Younes El Azhadi – Portfolio</title>
-    <meta name="description" content="Portfolio de Younes EL AZHADI, développeur full stack: Angular, .NET, Spring Boot, React, MongoDB, SQL, sécurité et performance." />
-
-    <!-- SEO basics -->
-    <meta name="author" content="Younes EL AZHADI" />
-    <meta name="theme-color" content="#0a84ff" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Icons (for favicon) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a84ff'/><text x='50' y='58' text-anchor='middle' font-size='44' font-family='Inter' fill='white'>YE</text></svg>" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
-
-    <header class="site-header" role="banner">
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#accueil" class="logo" aria-label="Retour à l'accueil">YOUNES EL AZHADI</a>
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Ouvrir le menu">
-          <span class="nav__bar" aria-hidden="true"></span>
-          <span class="nav__bar" aria-hidden="true"></span>
-          <span class="nav__bar" aria-hidden="true"></span>
-        </button>
-        <ul id="nav-list" class="nav__list">
-          <li><a href="#accueil" class="nav__link">Accueil</a></li>
-          <li><a href="#apropos" class="nav__link">À propos</a></li>
-          <li><a href="#certificats" class="nav__link">Certificats</a></li>
-          <li><a href="#competences" class="nav__link">Compétences</a></li>
-          <li><a href="#projets" class="nav__link">Projets</a></li>
-          <li><a href="#parcours" class="nav__link">Parcours</a></li>
-          <li><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-        <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre">
-          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-        </button>
-      </nav>
-    </header>
-
-    <main id="main">
-      <!-- Accueil -->
-<section id="accueil" class="section hero" aria-label="Accueil">
-  <div class="container hero__grid">
-
-    <!-- La photo et les réseaux sociaux -->
-    <div class="hero__media">
-      <img
-        class="avatar"
-        src="assets/portrait.jpg"
-        alt="Photo de profil de Younes El Azhadi"
-        width="320"
-        height="320"
-        loading="lazy"
-      />
-      <ul class="social" aria-label="Réseaux sociaux">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/younes-el-azhadi"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/younesazhadi"
-            target="_blank"
-            rel="noopener"
-            aria-label="GitHub"
-            >GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <!-- Le texte et les coordonnées -->
-    <div class="hero__content">
-      <p class="hero__kicker">Développeur Full Stack</p>
-      <h1 class="hero__title" aria-live="polite">
-        <span class="typewriter" data-text="YOUNES EL AZHADI"></span>
-      </h1>
-      <p class="hero__subtitle">
-        Passionné par le développement logiciel, spécialisé en ingénierie full-stack (Angular, .NET, Spring Boot, React, MongoDB, SQL), sécurité applicative et optimisation des performances.
-      </p>
-
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary">Me contacter</a>
-        <a href="#cv" class="btn btn--ghost">Télécharger mon CV</a>
-      </div>
-
-      <div class="hero__meta" role="list" aria-label="Coordonnées">
-        <span role="listitem">
-          <img
-            class="hero-icon"
-            src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/location.svg"
-            alt="Localisation"
-          />
-          Rabat, Maroc
-        </span>
-        <a role="listitem" href="tel:+212675956915">
-          <img
-            class="hero-icon"
-            src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/phone.svg"
-            alt="Téléphone"
-          />
-          +212 675 95 69 15
-        </a>
-        <a
-          role="listitem"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=younes.azhadi@gmail.com&su=Contact%20depuis%20votre%20portfolio&body=Bonjour%20Younes,%0AJe%20souhaite%20vous%20contacter%20concernant..."
-          target="_blank"
-        >
-          <img
-            class="hero-icon"
-            src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/mail.svg"
-            alt="Email"
-          />
-          younes.azhadi@gmail.com
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-      
-
-      <!-- À propos -->
-      <section id="apropos" class="section" aria-label="À propos">
-        <div class="container grid-2">
-          <div>
-            <h2>À propos</h2>
-            <p>
-              Rigoureux et adepte des bonnes pratiques (clean code, tests, audit), je conçois et réalise des applications web de bout en bout. J’évolue efficacement en équipe Agile pour garantir des livrables de qualité, sûrs et performants.
-            </p>
-            <ul class="list-meta">
-              <li>
-                <img class="meta-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/location.svg" alt="Localisation" />
-                Av Kiffah bloc AH N8 – Rabat – CYM
-              </li>
-              <li>
-                <img class="meta-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/cake.svg" alt="Date de naissance" />
-                Né le 15/10/2003
-              </li>
-              <li>
-                <img class="meta-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/target.svg" alt="Objectif" />
-                Objectif: Full‑Stack Engineer / Software Engineer
-              </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNES EL AZHADI - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="emailjs-config.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>YE</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">Profil</a></li>
+                <li><a href="#education" class="nav-link">Formation</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-          </div>
-          <div>
-            <h3 id="cv">Curriculum Vitæ</h3>
-            <p>Téléchargez mon CV en PDF pour plus de détails sur mon parcours.</p>
-            <a class="btn btn--primary" href="assets/Younes_El_Azhadi_CV.pdf" download="Younes_El_Azhadi_CV.pdf">
-              Télécharger le CV (PDF)
-            </a>
-          </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </section>
-<!-- Certificats -->
-<section id="certificats" class="section" aria-label="Certificats">
-  <div class="container">
-    <h2>Certificats</h2>
-    <ul class="cert-list">
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-          <span class="cert-title">Introduction à Java et à la programmation orientée objet</span>
-        </div>
-        <span class="cert-org">University of Pennsylvania</span>
-      </li>
-     
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-          <span class="cert-title">React Native</span>
-        </div>
-        <span class="cert-org">Meta</span>
-      </li>
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" />
-          <span class="cert-title">Introduction à Git et GitHub</span>
-        </div>
-        <span class="cert-org">Google</span>
-      </li>
-     
-     
-     
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-          <span class="cert-title">Les bases de React</span>
-        </div>
-        <span class="cert-org">Meta</span>
-      </li>
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
-          <span class="cert-title">Introduction aux conteneurs avec Docker, Kubernetes et OpenShift</span>
-        </div>
-        <span class="cert-org">IBM</span>
-      </li>
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
-          <span class="cert-title">Réseaux virtuels dans Azure</span>
-        </div>
-        <span class="cert-org">Whizlabs</span>
-      </li>
-      
-    
-      <li class="cert-item reveal">
-        <span class="cert-title">La recherche documentaire</span>
-        <span class="cert-org">École Polytechnique</span>
-      </li>
-      <li class="cert-item reveal">
-        <span class="cert-title">Villes africaines: Environnement et enjeux de développement durable</span>
-        <span class="cert-org">EPFL</span>
-      </li>
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
-          <span class="cert-title">L'atelier Unix</span>
-        </div>
-        <span class="cert-org">Johns Hopkins University</span>
-      </li>
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-          <span class="cert-title">Introduction à HTML5</span>
-        </div>
-        <span class="cert-org">University of Michigan</span>
-      </li>
-      <li class="cert-item reveal">
-        <span class="cert-title">Génie logiciel : conception de logiciels et gestion de projets</span>
-        <span class="cert-org">HKUST</span>
-      </li>
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-          <span class="cert-title">Introduction à CSS3</span>
-        </div>
-        <span class="cert-org">University of Michigan</span>
-      </li>
-    
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-          <span class="cert-title">La programmation pour tous (commencer en Python)</span>
-        </div>
-        <span class="cert-org">University of Michigan</span>
-      </li>
-      <li class="cert-item reveal">
-        <span class="cert-title">La plateforme Arduino et la programmation en C</span>
-        <span class="cert-org">University of California, Irvine</span>
-      </li>
-   
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-          <span class="cert-title">Interactivité avec JavaScript</span>
-        </div>
-        <span class="cert-org">University of Michigan</span>
-      </li>
-  
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Web Dev" />
-          <span class="cert-title">HTML, CSS et Javascript pour les développeurs web</span>
-        </div>
-        <span class="cert-org">Johns Hopkins University</span>
-      </li>
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-          <span class="cert-title">Le langage de requête structuré (SQL)</span>
-        </div>
-        <span class="cert-org">University of Colorado Boulder</span>
-      </li>
-     
-      <li class="cert-item reveal">
-        <div class="cert-header">
-          <img class="cert-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-          <span class="cert-title">Introduction à la programmation orientée objet (en C++)</span>
-        </div>
-        <span class="cert-org">EPFL</span>
-      </li>
+    </nav>
 
-    
-  
-    </ul>
-  </div>
-</section>
-      <!-- Compétences -->
-      <section id="competences" class="section section--alt" aria-label="Compétences">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="animated-bg"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <h1 class="hero-title">
+                    <span class="gradient-text">YOUNES EL AZHADI</span>
+                </h1>
+                <h2 class="hero-subtitle">Full Stack Developer</h2>
+                <p class="hero-description">Passionné par le développement full-stack, je recherche un stage PFE de 4 à 6 mois pour mettre en pratique mes compétences.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                    <a href="./assets/YOUNES-EL-AZHADI-CV.pdf" download="YOUNES-EL-AZHADI-CV.pdf" class="btn btn-secondary" id="downloadCV">
+                        <i class="fas fa-download"></i> Télécharger CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image slide-in-right">
+                <div class="image-wrapper">
+                    <img src="assets/portrait.jpg" alt="Younes El Azhadi" onerror="this.src='assets/portrait-placeholder.svg'">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
         <div class="container">
-          <h2>Compétences</h2>
-          <div class="skills">
-            <div class="skill">
-              <div class="skill__label">Angular</div>
-              <div class="progress" aria-label="Niveau Angular" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><span data-width="90%"></span></div>
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                <span class="title-text">Profil</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <p class="lead">Passionné par le développement full-stack, je recherche un <strong>stage PFE de 4 à 6 mois</strong> pour mettre en pratique mes compétences en Spring Boot, Angular, PostgreSQL et d'autres technologies du développement web.</p>
+                    <p>Rigoureux et motivé, je souhaite contribuer à la création d'applications performantes et de qualité. Mon expérience en développement full-stack et mon travail en équipe Agile me permettent de m'adapter rapidement aux nouveaux environnements.</p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>younes.azhadi@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+212 675 956 915</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av Kiffah bloc AH N8 - Rabat - CYM</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/younes-el-azhadi/" target="_blank">Younes el azhadi</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/younesazhadi" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-              <div class="skill__label">.NET / C#</div>
-              <div class="progress" aria-label="Niveau .NET" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88"><span data-width="88%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__label">Spring Boot / Java</div>
-              <div class="progress" aria-label="Niveau Spring Boot" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span data-width="90%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__label">React</div>
-              <div class="progress" aria-label="Niveau React" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82"><span data-width="82%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__label">MongoDB / SQL</div>
-              <div class="progress" aria-label="Niveau Bases de données" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87"><span data-width="87%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__label">Sécurité & Performance</div>
-              <div class="progress" aria-label="Niveau Sécurité & Performance" aria-valuemin="0" aria-valuemax="100" aria-valuenow="83"><span data-width="83%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__label">HTML/CSS/JS</div>
-              <div class="progress" aria-label="Niveau HTML/CSS/JS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92"><span data-width="92%"></span></div>
-            </div>
-            <div class="skill">
-              <div class="skill__label">Python / Django</div>
-              <div class="progress" aria-label="Niveau Python/Django" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><span data-width="78%"></span></div>
-            </div>
-          </div>
-          <ul class="chips" aria-label="Autres compétences">
-            <li>UML</li>
-            <li>Bootstrap</li>
-            <li>JWT</li>
-            <li>Git / GitHub</li>
-            <li>ClosedXML</li>
-            <li>IText7</li>
-          </ul>
         </div>
-      </section>
+    </section>
 
-      <!-- Projets -->
-      <section id="projets" class="section" aria-label="Projets">
+    <!-- Education Section -->
+    <section id="education" class="section education">
         <div class="container">
-          <h2>Projets</h2>
-          <div class="projects">
-            <article class="card reveal">
-              <div class="card__body">
-                <h3>Gestion de Clinique</h3>
-                <p>Gestion des patients, rendez‑vous et dossiers avec authentification et rôles. Stack: React, .NET, SQL Server.</p>
-              </div>
-            </article>
-            <article class="card reveal">
-              <div class="card__body">
-                <h3>GzaTel – Gestion de Magasins</h3>
-                <p>Ventes, stocks, facturation et rôles avec suivi temps réel. Stack: Spring Boot, React, MySQL.</p>
-              </div>
-            </article>
-            <article class="card reveal">
-              <div class="card__body">
-                <h3>Gestion de Restaurant</h3>
-                <p>Réservations et menus, DRM pour protéger les contenus, fortes performances. Stack: Django, JS, HTML/CSS.</p>
-              </div>
-            </article>
-            <article class="card reveal">
-              <div class="card__body">
-                <h3>Gestion de Bibliothèque</h3>
-                <p>Desktop Java Swing: livres, emprunts, adhérents, base de données via JDBC.</p>
-              </div>
-            </article>
-          </div>
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                <span class="title-text">Parcours Académique</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2024</div>
+                        <h3>Ingénieur d'état en développement Informatique</h3>
+                        <h4>Ecole Marocaine des sciences de l'ingénieur</h4>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2021</div>
+                        <h3>Baccalauréat en science physique</h3>
+                        <h4>Les écoles scientifiques</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Parcours -->
-      <section id="parcours" class="section section--alt" aria-label="Parcours">
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
         <div class="container">
-          <h2>Parcours</h2>
-          <ol class="timeline" aria-label="Ligne du temps des expériences et formations">
-            <li class="timeline__item reveal">
-              <div class="timeline__dot" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <h3>Stage – CEGEDIM</h3>
-                <p class="timeline__meta">07/2025 – 09/2025 • Rabat</p>
-                <ul>
-                  <li>Spécification des besoins, user stories</li>
-                  <li>App interne full‑stack: gestion des bons de livraison</li>
-                  <li>Système d'audit et traçabilité, sécurité des données</li>
-                  <li>Tests unitaires, intégration et utilisateurs</li>
-                  <li>Optimisation des performances, déploiement</li>
-                  <li>Collaboration Agile</li>
-                </ul>
-                <p class="tech">Tech: Angular 15, .NET 6, MongoDB, JWT, ClosedXML, IText7, Bootstrap, Git/GitHub</p>
-              </div>
-            </li>
-            <li class="timeline__item reveal">
-              <div class="timeline__dot" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <h3>Stage – Ayouris</h3>
-                <p class="timeline__meta">07/2024 – 09/2024 • Rabat</p>
-                <ul>
-                  <li>Raffinements, spécifications</li>
-                  <li>Amélioration de l’expérience utilisateur</li>
-                  <li>Développement de l’app Web SMSCloud</li>
-                  <li>Documentation</li>
-                </ul>
-                <p class="tech">Tech: Spring Boot, Java, React, PostgreSQL, HTML, CSS</p>
-              </div>
-            </li>
-            <li class="timeline__item reveal">
-              <div class="timeline__dot" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <h3>Ingénieur d'État en Développement Informatique</h3>
-                <p class="timeline__meta">2021 – 2026 • EMSI, Rabat</p>
-              </div>
-            </li>
-            <li class="timeline__item reveal">
-              <div class="timeline__dot" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <h3>Baccalauréat Sciences Physiques</h3>
-                <p class="timeline__meta">2020 – 2021 • Les écoles scientifiques, Témara</p>
-              </div>
-            </li>
-          </ol>
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                <span class="title-text">Expériences Professionnelles</span>
+            </h2>
+            <div class="experience-grid">
+                <div class="experience-card fade-in-up">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>Stage</h3>
+                            <h4>CEGEDIM</h4>
+                        </div>
+                    </div>
+                    <ul class="card-list">
+                        <li><strong>Analyse et spécification :</strong> Contribution active à la rédaction des besoins fonctionnels et des user stories, garantissant une compréhension claire des attentes métier.</li>
+                        <li><strong>Développement full-stack :</strong> Conception et développement complet d'une application de gestion des bons de livraison, de la base de données à l'interface utilisateur.</li>
+                        <li><strong>Qualité et performance :</strong> Mise en place d'un système d'audit complet, implémentation de tests unitaires et d'intégration, et optimisation des performances pour une application rapide et fiable.</li>
+                        <li><strong>Collaboration Agile :</strong> Participation active aux cérémonies Scrum (daily stand-ups, sprints, rétrospectives), favorisant une communication efficace et une livraison continue de valeur.</li>
+                        <li><strong>Génération de rapports :</strong> Intégration de bibliothèques avancées (ClosedXML, iText7) pour la génération automatique de documents et rapports professionnels.</li>
+                        <li><strong>Sécurité :</strong> Implémentation d'un système d'authentification robuste avec JWT pour garantir la sécurité des données et des transactions.</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Angular 15</span>
+                        <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>JWT</span>
+                        <span>ClosedXML</span>
+                        <span>iText7</span>
+                        <span>Bootstrap</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+                <div class="experience-card fade-in-up">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>Stage</h3>
+                            <h4>Ayouris</h4>
+                        </div>
+                    </div>
+                    <ul class="card-list">
+                        <li><strong>Développement web moderne :</strong> Contribution significative au développement de l'application Web SMSCloud en utilisant les dernières technologies (.NET, React, MongoDB).</li>
+                        <li><strong>UX/UI améliorée :</strong> Refonte et amélioration de l'interface utilisateur, résultant en une expérience plus intuitive et une augmentation de la satisfaction utilisateur.</li>
+                        <li><strong>Analyse fonctionnelle :</strong> Participation active aux raffinements et à la spécification détaillée des besoins, assurant l'alignement entre les attentes métier et les solutions techniques.</li>
+                        <li><strong>Documentation technique :</strong> Rédaction complète de la documentation technique et utilisateur, facilitant la maintenance et l'onboarding des nouveaux développeurs.</li>
+                        <li><strong>Architecture NoSQL :</strong> Implémentation et optimisation de la base de données MongoDB pour une gestion efficace des données non structurées.</li>
+                        <li><strong>Intégration frontend/backend :</strong> Développement d'APIs RESTful avec .NET et intégration avec React pour une architecture moderne et scalable.</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>.NET</span>
+                        <span>React</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Contact -->
-      <section id="contact" class="section" aria-label="Contact">
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
         <div class="container">
-          <h2>Contact</h2>
-          <p style="text-align: center; margin-bottom: 40px; color: var(--muted);">Vous avez un projet ou une opportunité ? Contactez‑moi directement.</p>
-          <div class="contact-grid">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=younes.azhadi@gmail.com&su=Contact%20depuis%20votre%20portfolio&body=Bonjour%20Younes,%0AJe%20souhaite%20vous%20contacter%20concernant..." 
-   target="_blank" 
-   class="contact-card">
-  <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/mail.svg" alt="Email" />
-  <h3>Email</h3>
-  <p>younes.azhadi@gmail.com</p>
-</a>
-
-            <a href="tel:+212675956915" class="contact-card">
-              <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/phone.svg" alt="Téléphone" />
-              <h3>Téléphone</h3>
-              <p>+212 675 95 69 15</p>
-            </a>
-            <a href="https://www.linkedin.com/in/younes-el-azhadi" target="_blank" rel="noopener" class="contact-card">
-              <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/brand-linkedin.svg" alt="LinkedIn" />
-              <h3>LinkedIn</h3>
-              <p>younes el azhadi</p>
-            </a>
-            <a href="https://github.com/younesazhadi" target="_blank" rel="noopener" class="contact-card">
-              <img class="contact-icon" src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/brand-github.svg" alt="GitHub" />
-              <h3>GitHub</h3>
-              <p>youneselazhadi</p>
-            </a>
-          </div>
+            <h2 class="section-title">
+                <span class="title-number">04</span>
+                <span class="title-text">Projets Académiques</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plateforme de covoiturage</h3>
+                        <p class="project-description">Plateforme web moderne permettant aux utilisateurs de partager des trajets. Système de matching intelligent, gestion des réservations et suivi en temps réel des trajets pour une expérience utilisateur fluide.</p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>Angular</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Application de Gestion de Clinique</h3>
+                        <p class="project-description">Application web complète de gestion de clinique incluant la gestion des patients, rendez-vous et dossiers médicaux, avec un système sécurisé d'authentification et de gestion des rôles utilisateurs.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>.NET</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GzaTel – Système de Gestion de Magasins Traditionnels</h3>
+                        <p class="project-description">Système complet de gestion des ventes, stocks et facturation avec suivi en temps réel. Intègre la gestion des rôles utilisateurs et la sécurisation des transactions pour une solution robuste et sécurisée.</p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Système de Gestion de Restaurant</h3>
+                        <p class="project-description">Application web moderne pour la gestion des réservations et menus. Intègre un système DRM protégeant les contenus tout en garantissant des performances élevées et une expérience utilisateur optimale.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Application de Gestion de Bibliothèque</h3>
+                        <p class="project-description">Application desktop complète avec interface graphique intuitive pour la gestion des livres, des emprunts et des adhérents. Connectée à une base de données pour un suivi efficace et automatisé.</p>
+                        <div class="project-tech">
+                            <span>Java Swing</span>
+                            <span>JDBC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer" role="contentinfo">
-      <div class="container footer__grid">
-        <p>© <span id="year"></span> Younes El Azhadi. Tous droits réservés.</p>
-        <nav aria-label="Liens utiles">
-          <ul class="footer__links">
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="assets/Younes_El_Azhadi_CV.pdf" download="Younes_El_Azhadi_CV.pdf">Télécharger le CV</a></li>
-          </ul>
-        </nav>
-      </div>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05</span>
+                <span class="title-text">Compétences</span>
+            </h2>
+            <div class="skills-content">
+                <div class="skills-category fade-in-up">
+                    <h3><i class="fas fa-code"></i> Compétences Techniques</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Angular</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">.NET</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-tags fade-in-up">
+                    <h3><i class="fas fa-tags"></i> Technologies</h3>
+                    <div class="tags-container">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">ASP.NET</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">UML</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Scrum</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="languages-section fade-in-up">
+                    <h3><i class="fas fa-language"></i> Langues</h3>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <span class="lang-name">Français</span>
+                            <span class="lang-level">B2</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">Arabe</span>
+                            <span class="lang-level">Langue maternelle</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">Anglais</span>
+                            <span class="lang-level">Courant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications-section fade-in-up">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="certifications-list">
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Introduction à Java et à la programmation orientée objet - University of Pennsylvania</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>React Native - Meta</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Introduction à Git et GitHub - Google</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Les bases de React - Meta</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Introduction aux conteneurs avec Docker, Kubernetes et OpenShift - IBM</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Réseaux virtuels dans Azure - Whizlabs</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>La recherche documentaire - École Polytechnique</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Villes africaines: Environnement et enjeux de développement durable - EPFL</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>L'atelier Unix - Johns Hopkins University</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Introduction à HTML5 - University of Michigan</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Génie logiciel: conception de logiciels et gestion de projets - HKUST</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Introduction à CSS3 - University of Michigan</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>La programmation pour tous (commencer en Python) - University of Michigan</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>La plateforme Arduino et la programmation en C - University of California, Irvine</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Interactivité avec JavaScript - University of Michigan</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>HTML, CSS et Javascript pour les développeurs web - Johns Hopkins University</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Le langage de requête structuré (SQL) - University of Colorado Boulder</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-award"></i>
+                            <span>Introduction à la programmation orientée objet (en C++) - EPFL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualities-section fade-in-up">
+                    <h3><i class="fas fa-star"></i> Qualités</h3>
+                    <div class="qualities-grid">
+                        <div class="quality-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Capacité d'adaptation</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Esprit créatif</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Proactivité et autonomie</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-users"></i>
+                            <span>Travail en équipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06</span>
+                <span class="title-text">Contact</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in-up">
+                    <h3>N'hésitez pas à me contacter</h3>
+                    <p>Je suis disponible pour discuter de nouvelles opportunités et projets passionnants.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:younes.azhadi@gmail.com">younes.azhadi@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+212675956915">+212 675 956 915</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av Kiffah bloc AH N8 - Rabat - CYM</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/younes-el-azhadi/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/younesazhadi" target="_blank">GitHub</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <a href="./assets/YOUNES-EL-AZHADI-CV.pdf" download="YOUNES-EL-AZHADI-CV.pdf" id="downloadCV2">Télécharger mon CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in-up">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                <span>Nom complet</span>
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                <span>Sujet</span>
+                            </label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                <span>Message</span>
+                            </label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="btn-loader"></div>
+                        </button>
+                        <div class="form-message success-message" id="successMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.</span>
+                        </div>
+                        <div class="form-message error-message-form" id="errorMessage">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Une erreur s'est produite. Veuillez réessayer ou me contacter directement par email.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Younes El Azhadi. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/younes-el-azhadi/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/younesazhadi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:younes.azhadi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js" defer></script>
-    <!-- Bouton retour en haut -->
-<button id="btnUp" title="Retour en haut" aria-label="Retour en haut">↑</button>
-  </body>
-  </html>
-
+    <script src="script.js"></script>
+</body>
+</html>
 
