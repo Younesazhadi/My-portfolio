@@ -493,7 +493,7 @@ const optimizedScroll = () => {
 window.addEventListener('scroll', optimizedScroll, { passive: true });
 
 // ===== CV DOWNLOAD HANDLER =====
-const cvLinks = document.querySelectorAll('a[href*="YOUNES-EL-AZHADI-CV.pdf"], #downloadCV, #downloadCV2');
+const cvLinks = document.querySelectorAll('a[href*="YOUNES-EL-AZHADI-CV .pdf"], #downloadCV, #downloadCV2');
 cvLinks.forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
